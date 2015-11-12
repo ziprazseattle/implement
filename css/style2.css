@@ -65,43 +65,40 @@ body {
 
 } 
 
-#left-content {
-  background-color: blue;
-  display: inline-block;
-  width: 50%;
-
-}
-
-#right-content {
-  background-color: red;
-  display: inline-block;
-  margin: 120px 0 0 0;
-  padding: 0 0 0 50px;
-  float: right;
-  width: 50%;
-}
-
-
-
-/* ? Right way to use h1 for SEO? Will h1 display if img breaks? */
+/* ? How to use h1 for SEO & if img breaks display:hidden? but display image instead */
 h1#page-name {
-  display: none; 
+  /* diplay: none; */
   font-weight: bold;
   font-size: 48px;
 }
 
-#hero-image {
-  float: right;
-  margin: 20px 0 20px 0px;  
+#wrap-all-content {
+  background-color: rgba(50,50,50,0.2);
 }
 
-#userName {
+#left-content {
+  display: inline-block;
+  width: 45%;
+  background-color: blue;
 
 }
 
-p.login {
-  margin: 5px 0 10px 0;
+#wrap-right-again {
+  display: inline-block;
+  width: 45%;
+  position: relative;
+  background-color: red;
+
 }
+
+#right-content {
+  position:absolute; 
+  top:50%; 
+  height: 200px; 
+  margin-top:-100px; 
+}
+
+
 
 /*******************************************
  STEP UP STYLES

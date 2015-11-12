@@ -12,23 +12,37 @@
 
 	<title>Step Up!</title>
 
-	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css"
 
 </head>
 
 <body>
 
-	<header>
-		<!-- Use image for header -->
-			<h1 id="page-name">Step Up</h1>
-	</header>	
+	<div id="left-content">
+			<img  id="hero-image" src="images/puppy.png">
+	</div> <!-- end #left-content div   -->
 
-	<form id="userName">
-		<!-- Add title to form field: User Name -->
-		<!-- Can we code to only take properly formatted emails -->
-		<input id="schoolEmail" type="text" placeholder="Enter school email">
-	</form>
+
+<!-- See Index2, vertical align fix not working http://phrogz.net/CSS/vertical-align/index.html -->
+
+	<div id="right-content">
+		
+			<header>
+				<!-- Use image for header   -->
+				<h1 id="page-name">Step Up</h1>
+				<img src="images/title-image.png">
+			</header>	
+
+			<form id="userName">
+				<!-- Add title to form field instead of <p>? -->
+				<p class="login"><strong>Welcome!</strong> Log In</p>
+				<!-- Can we code to only take properly formatted emails -->
+				<input id="schoolEmail" type="text" placeholder="Enter school email">
+			</form>
+		
+	</div> <!-- end #right-content div   -->
+
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

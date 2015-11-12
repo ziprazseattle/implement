@@ -1,0 +1,52 @@
+
+
+<!doctype HTML> 
+
+<html lang="en">
+<head>
+	<!-- ?Is charset important to include? -->
+	<meta charset="utf-8">
+	<meta name="description" content="Track and improve your implementation of the Second Step">
+	<!-- Two word phrase, wrap with single quotes? -->
+	<meta name="keywords" content="Implementation,'Class Climate', 'Tracking Tools', 'social-emotional learning', 'Second Step', teacher, dashboard, game">
+
+	<title>Step Up!</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style2.css"
+
+</head>
+
+<body>
+
+	<div id="wrap-all-content">
+		<div id="left-content">
+				<p>LEFT CONTENT</p>
+				<p>Paragraph</p>
+				<img src="images/puppy.png">
+		</div> <!-- end #left-content div   -->
+
+<!-- Fix not working http://phrogz.net/CSS/vertical-align/index.html -->
+
+		<div id="wrap-right-again">
+			<div id="right-content">
+					<p>RIGHT CONTENT</p>
+					<header>
+					<!-- Use image for header   -->
+					<h1 id="page-name">Step Up</h1>
+				</header>	
+
+				<form id="userName">
+					<!-- Add title to form field: User Name -->
+					<!-- Can we code to only take properly formatted emails -->
+					<input id="schoolEmail" type="text" placeholder="Enter school email">
+				</form>
+			</div> <!-- end #right-content div   -->
+		</div> <!-- end #wrap-right-again div   -->
+	</div> <!-- end #wrap-content div   -->
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	 <script src="js/index.js"></script> 
+</body>
+</html> 
