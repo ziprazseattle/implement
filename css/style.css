@@ -44,7 +44,7 @@ Amber Zipperer
 }
 
 /*******************************************
- STYLES INDEX
+ STYLES INDEX & PERSISTANT 
 *******************************************/
 
 body {
@@ -103,8 +103,42 @@ p.login {
   margin: 5px 0 10px 0;
 }
 
+footer {
+    margin: 20px 30px;
+}
+
 /*******************************************
- STEP UP STYLES
+ STEP UP GAME STYLES
+*******************************************/
+
+#admin-bar {
+  background-color: red;
+  width: 100%; 
+}
+
+#page-content {
+  background-color: blue; 
+  display: inline-block;
+  width: 75%; 
+  margin: 40px 20px 40px 30px;
+
+}
+
+#info-content {
+  background-color: yellow;
+  display: inline-block;
+  width: 25
+  float:right; 
+  margin: 40px 20px 40px 0px;
+}
+
+
+
+
+
+
+/*******************************************
+ STEP UP DASHBOARD STYLES
 *******************************************/
 
 /* ? Want to keep widths responsive */
@@ -113,7 +147,6 @@ p.login {
 	min-width: 300px;
 	background-color: rgba(255,255,255,.2);
 }
-
 
 
 
