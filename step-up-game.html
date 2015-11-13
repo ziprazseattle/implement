@@ -12,26 +12,58 @@
 	<title>Step Up!</title>
 
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css"
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,300italic,300,400italic,400' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
 
 <!-- Top links/social media/account settings -->
-	<header id="admin-bar">
-		Header
+	<header id="admin-bar" class="clearfix clear">
+		<nav id="admin-nav">
+			<ul class="admin-links">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Link1</a></li>
+				<li><a href="#">Link2</a></li>
+				<li><a href="#">Profile</a></li>
+				<li><a href="#">Settings</a></li>
+			</ul>
+		</nav>
 	</header>	
 
-			
+<!-- ? How does clear fix work?   -->	
 	<div id="page-content">	
-		PAGE
-	</div> <!-- end #game-content div   -->
-
+		<div id="game-content" class="clearfix clear">	
+			PAGE
+		</div> <!-- end #game-content div   -->
+	</div> <!-- end #page-content div   -->
 			
-	<div id="info-content">	
-		INFO
-	</div> <!-- end #game-content div   -->
+	<div id="info-content" class="clearfix clear">	
+		<div id="right-column-flyout">
+				<ul class="sidebar">
+					<li class="section-head">Train Up</li>
+						<ul class="sidebar">
+							<li class="sidebar">Item One</li>
+							<li class="sidebar">Item Two</li>
+							<li class="sidebar">Item Three</li>
+						</ul>
+
+					<li class="section-head">Teach It</li>
+					<ul class="sidebar">
+							<li class="sidebar">Item One</li>
+							<li class="sidebar">Item Two</li>
+							<li class="sidebar">Item Three</li>
+						</ul>
+					<li class="section-head">Reinforce</li>
+					<ul class="sidebar">
+							<li class="sidebar">Item One</li>
+							<li class="sidebar">Item Two</li>
+							<li class="sidebar">Item Three</li>
+						</ul>
+				</ul>
+			</div> <!-- end div right-column -->
+	</div> <!-- end #info-content div   -->
 
 <footer>
 	<small>Copyright Committee for Children 2015</small>

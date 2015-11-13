@@ -50,12 +50,17 @@ Amber Zipperer
 body {
   font-size: 14px;
   line-height: 1.4;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   background: url(../images/X.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
 /* ? Will 100% work for centering the container & bkgd img cover */
@@ -65,18 +70,20 @@ body {
 
 } 
 
+#login-page-content {
+  url(background-image:  no-repeat )
+}
+
 #left-content {
-  background-color: blue;
   display: inline-block;
   width: 50%;
 
 }
 
 #right-content {
-  background-color: red;
   display: inline-block;
-  margin: 120px 0 0 0;
-  padding: 0 0 0 50px;
+  margin: 80px 0 0 0;
+  padding: 0 0 0 30px;
   float: right;
   width: 50%;
 }
@@ -95,16 +102,62 @@ h1#page-name {
   margin: 20px 0 20px 0px;  
 }
 
-#userName {
 
+
+#user-name {
+
+}
+
+#school-email {
+  padding: 10px;
+  font-size: 16px;
+  color: #acacac;
+}
+
+input:focus {
+  background-color: #fff;
+  box-shadow: 0 0 0px;
+  outline: orange solid 2px;
+}
+  
+.important-subtitle {
+  font-size: 24px;
 }
 
 p.login {
   margin: 5px 0 10px 0;
+  font-size: 16px;
+  color: #444;
 }
 
+p.feature-text {
+  font-size: 18px;
+  font-weight:bold;
+  margin-top:50px;
+}
+
+
+p.feature-text a {
+  font-size: 15px;
+  font-weight:normal;
+  color: orange;
+  text-decoration: none;
+}
+
+.informational-text {
+  margin-top: 5px;
+}
+
+.informational-text a{
+  font-size: 13px;
+  font-weight:normal;
+  color: orange;
+  text-decoration: none;
+}
+
+
 footer {
-    margin: 20px 30px;
+    margin: 10px 30px;
 }
 
 /*******************************************
@@ -116,22 +169,67 @@ footer {
   width: 100%; 
 }
 
+#admin-nav {
+  display: inline;
+}
+
+ul.admin-links a {
+  list-style-type: none;
+  color:white;
+  font-size: 12px;
+  display: inline;
+}
+
+ul li.admin-links a {
+  list-style-image: url(../images/icons/checkmark-circle.png);
+  list-style-position: outside;
+    display: inline;
+
+}
+
 #page-content {
-  background-color: blue; 
   display: inline-block;
   width: 75%; 
-  margin: 40px 20px 40px 30px;
-
+  padding: 30px 30px 0px 30px;
+}
+/* ? Can I make background image display w/o specifying height? 
+    ? Why does adding cover break image? */
+#game-content {
+  background: url(../images/screen-placeholder.jpg) 100% center no-repeat #aeaeae;
+  background-size: cover;
+  height: 600px;
+  padding: 0px;
+  margin: 0px;
 }
 
 #info-content {
-  background-color: yellow;
+  background-color: rgba(0, 0, 0, 0.7);
   display: inline-block;
-  width: 25
+  width: 25%;
   float:right; 
-  margin: 40px 20px 40px 0px;
+  padding: 30px 20px 20px 0px;
 }
 
+/* Add list style image, change with js? when it's complete 
+    ? Why text indent not working? Is list style position needed? */
+ul.sidebar {
+  list-style-type: none;
+  color:white;
+  line-height: 1.8em;
+  font-size: 16px;
+  margin:0 0 10px 0;
+  padding: 0 0 20px 20px;
+}
+
+ul li.sidebar {
+  list-style-image: url(../images/icons/checkmark-circle.png);
+  list-style-position: outside;
+}
+
+ul li.section-head {
+  list-style-image: none;
+  font-size: 19px;
+}
 
 
 
@@ -148,8 +246,17 @@ footer {
 	background-color: rgba(255,255,255,.2);
 }
 
+/*
 
+When an <input type="text"> gets focus, gradually change the width from 100px to 250px:
+input[type=text] {
+    width: 100px;
+    transition: ease-in-out, width .35s ease-in-out;
+}
 
+input[type=text]:focus {
+    width: 250px;
+}
 
-
+*/
 

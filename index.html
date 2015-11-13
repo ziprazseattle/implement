@@ -13,12 +13,13 @@
 	<title>Step Up!</title>
 
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css"
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,300italic,300,400italic,400' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
-
+<div id="login-page-content">
 	<div id="left-content">
 			<img  id="hero-image" src="images/puppy.png">
 	</div> <!-- end #left-content div   -->
@@ -34,15 +35,18 @@
 				<img src="images/title-image.png">
 			</header>	
 
-			<form id="userName">
+			<form id="user-name">
 				<!-- Add title to form field instead of <p>? -->
-				<p class="login"><strong>Welcome!</strong> Log In</p>
+				<p class="login"><span class="important-subtitle"><strong>Welcome!</strong></span> Log In</p>
 				<!-- Can we code to only take properly formatted emails -->
-				<input id="schoolEmail" type="text" placeholder="Enter school email">
+				<input id="school-email" type="text" placeholder="Enter school email" required autofocus>
 			</form>
-		
-	</div> <!-- end #right-content div   -->
+			<p class="informational-text"><a href="#">Forgot email?</a></p>
+			<p class="feature-text">New to SecondStep.org? <a href="#">Register to activate your program</a></p>
+			<!-- Submit form on enter. Does that require js? -->
 
+	</div> <!-- end #right-content div   -->
+</div> <!-- end #login-page-content div   -->
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
