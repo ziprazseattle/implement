@@ -34,67 +34,101 @@
 	</header>		
 
 
-<!-- ? How does clear fix work?   -->	
+<!-- ? How does clear fix work? Footer going to the right now  -->	
 	<div id="page-content">	
 		<h1 class="page-name">Title Goes Here</h1>
-		<div id="game-content" class="clearfix clear">	
+		<div id="game-content">	
 		</div> <!-- end #game-content div   -->
 	</div> <!-- end #page-content div   -->
 
 
 	<!-- right column content begins -->
-	<div id="info-content" class="clearfix clear">	
+	<div id="info-content">	
 
-	
+		
 
-	<!-- right column page content  -->
-		<div id="checklist-banner">Check the list! 
-		</div>
+		<!-- right column page content begins -->
+			<div id="checklist-banner">My List &#8675;
+			</div>
+			<div id="right-column">
+				<div class="sidebar-video">
+					<img id="sidebar-video-thumb" src="images/placeholder-video.jpg" alt="2 minute instructional video">
+				</div><!-- sidebar-video ends -->
 
-		<div>
-	<!-- right column page content ends -->
+				<div class="sidebar-info-text">
+					<h3>Section Title Goes Here</h3>
+					<p>Fatback chuck enim sed ut pariatur, bacon meatloaf corned beef eu venison. Shank filet mignon, ribeye andouille tongue cillum sint cow ball tip, ham dolor capicola kielbasa non.</p>
+					<p>Meatloaf corned beef eu venison. Shank filet mignon, ribeye andouille tongue cillum sint cow ball tip, ham dolor capicola kielbasa non. <span class="next"><a href="#">next</span></a></p>
 
- 
+					<ul class="sidebar-progress">
+							<li class="sidebar-progress" id="prep">Prep
+							</li>
 
-		<!-- right column fly out content  -->
-		<div id="right-column-flyout"> 
-<!-- ? Are nested ul/li tags correct?  --> 
+							<li class="sidebar-progress" id="delivery">Delivery
+							</li>
 
-				<ul class="sidebar-flyout">
-					<li><a href="#">Train Up</a>
-						<ul class="sidebar-flyout">
-							<li class="sidebar-flyout"><a href="#">Item One</a></li>
-							<li class="sidebar-flyout"><a href="#">Item Two</a></li>
-							<li class="sidebar-flyout"><a href="#">Item Three</a></li>
-						</ul>
-					</li>
+							<li class="sidebar-progress" id="effect">Effect
+							</li>
+					</ul><!-- sidebar-progress ul ends -->
 
-					<li><a href="#">Teach It</a>
-						<ul class="sidebar-flyout">
-							<li class="sidebar-flyout"><a href="#">Item One</a></li>
-							<li class="sidebar-flyout"><a href="#">Item Two</a></li>
-							<li class="sidebar-flyout"><a href="#">Item Three</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Reinforce</a>
+
+
+
+
+				</div><!-- sidebar-info-text ends -->
+
+				<div class="sidebar-progress">
+				</div><!-- sidebar-progress ends -->
+
+			</div><!-- right-column ends -->
+
+	 
+
+			<!-- right column fly out content  -->
+			<div id="right-column-flyout"> 
+	<!-- ? Are nested ul/li tags correct?  --> 
+
 					<ul class="sidebar-flyout">
-							<li class="sidebar-flyout"><a href="#">Item One</a></li>
-							<li class="sidebar-flyout"><a href="#">Item Two</a></li>
-							<li class="sidebar-flyout"><a href="#">Item Three</a></li>
-						</ul>
-					</li>
-				</ul>
-		<!-- end div right-column-flyout -->
-		</div> 
+						<li><a id="flyout-title" href="#"><span class="suit">&#9829;</span> Train Up</a>
+							<ul class="sidebar-flyout">
+								<li class="sidebar-flyout"><a href="#">Item One</a></li>
+								<li class="sidebar-flyout"><a href="#">Item Two</a></li>
+							</ul>
+						</li>
+
+						<li><a id="flyout-title" href="#"><span class="suit">&#9827;</span> Teach It</a>
+							<ul class="sidebar-flyout">
+								<li class="sidebar-flyout"><a href="#">Item One</a></li>
+								<li class="sidebar-flyout"><a href="#">Item Two</a></li>
+								<li class="sidebar-flyout"><a href="#">Item Three</a></li>
+							</ul>
+						</li>
+
+						<li><a id="flyout-title" href="#"><span class="suit">&#9830;</span> Reinforce</a>
+							<ul class="sidebar-flyout">
+								<li class="sidebar-flyout"><a href="#">Item One</a></li>
+								<li class="sidebar-flyout"><a href="#">Item Two</a></li>
+							</ul>
+						</li>
+
+						<li><a id="flyout-title" href="#"><span class="suit">&#9824;</span> Share</a>
+							<ul class="sidebar-flyout">
+								<li class="sidebar-flyout"><a href="#">Item One</a></li>
+								<li class="sidebar-flyout"><a href="#">Item Two</a></li>
+							</ul>
+						</li>
+					</ul>
+			<!-- end div right-column-flyout -->
+			</div> 
 
 
-	</div> <!-- end #info-content div   -->	<!-- right column content ends -->
+		</div> <!-- end #info-content div   -->	<!-- right column content ends -->
 
-<!-- ? Adding clear to footer or adding empty clear div didn't work
+<!-- ? Adding clear to footer (class="clear") or adding empty clear div didn't work
 	<div class="clear"></div> -->
 
-<footer id="copyright" class="clear">
-	<small>Copyright Committee for Children 2015</small>
+<footer id="copyright" class="clearfix">
+	<small>&copy; 2015 &hearts; <a href="http://www.cfchildren.org">Committee for Children:</a> Makers of the acclaimed <a href="http://www.secondstep.org"><span class="em">Second Step</span> program</a></small>
 </footer>
 
 

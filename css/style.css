@@ -53,6 +53,7 @@ If bckgd texture needed:; background: url(../images/X.jpg) no-repeat center cent
 */
 body {
   font-size: 14px;
+  color: #444;;
   line-height: 1.4;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   -webkit-background-size: cover;
@@ -130,7 +131,6 @@ input:focus {
 p.login {
   margin: 5px 0 10px 0;
   font-size: 16px;
-  color: #444;
 }
 
 p.feature-text {
@@ -158,10 +158,28 @@ p.feature-text a {
   text-decoration: none;
 }
 
+/* START FOOTER **********************/
 
-footer {
+footer#copyright {
+
     margin: 10px 30px;
 }
+
+footer#copyright a {
+  color:black;
+  text-decoration: none;
+}
+
+footer#copyright a:hover {
+  color:orange;
+}
+
+/* ? Why won't Second Step italicize AND bold? **********************/
+.em {
+  font-style:italic;
+  font-weight: 700;
+}
+
 
 /*******************************************
  STEP UP GAME/DASHBOARD PAGE STYLES
@@ -206,7 +224,7 @@ ul.admin-ul li {
 }
 
 
-/* ? Is there a better way to do the nav? can't top align imgs and text 
+/* ? Is there a better way to do the nav? can't top align imgs and text when I use both
   vertical-align: text-top; 
 #logout-link {
   display: inline-block;
@@ -237,6 +255,7 @@ ul.admin-ul li {
   padding: 30px 30px 0px 30px;
 }
 
+
 /* ? Can I make background image display w/o specifying height?  */
 #game-content {
   background: url(../images/screen-placeholder.jpg) 100% center no-repeat #aeaeae;
@@ -248,6 +267,7 @@ ul.admin-ul li {
 
 h1.page-name {
   margin: 0px 0px 10px;
+  padding: 0px;
   font-size: 24px;
 }
 
@@ -265,24 +285,89 @@ h1.page-name {
 
 
 #checklist-banner {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px 20px 20px;
-  margin: 0px;
+  background-color: #888;
+  padding: 8px 20px;
+  margin: 40px 0px 0px;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
 }
 
 #right-column {
-  background-color: black;
-  padding: 30px 20px 20px;
-  margin-top: 73px;
+    /*  display: inline-block; */
+  display: inline-block;
+  background-color: white;
+  padding: 30px 20px 12px;
+  margin: 0px;
+  height: 600px;
 }
+
+.sidebar-video {
+  padding: 0px;
+  margin: 0px;
+}
+
+#sidebar-video-thumb {
+  width:100%;
+}
+
+.sidebar-info-text { 
+  margin-bottom: 0px;
+}
+
+.next a {
+  font-variant: small-caps;
+  font-weight: bold;
+  color: orange;
+  float: right;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.next a:hover {
+  color:#888;
+}
+
+
+
+
+ul li.sidebar-progress {
+  list-style-image: url(../images/icons/pie.png);
+  font-size: 15px;
+  padding: 6px 0px;
+  margin: 0px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+/* ? How to postion list style images to vertically align with text?  **********************/
+
+#prep {
+    list-style-image: url(../images/icons/pie-chart.png);
+    vertical-align: middle;
+}
+
+#delivery {
+    list-style-image: url(../images/icons/pie-right-bottom.png);
+}
+
+#effect {
+    list-style-image: url(../images/icons/pie-left-top.png);
+}
+
+
+
 
 
 /* START RIGHT COL FLYOUT **********************/
 
 #right-column-flyout {
+  /*  display: block; */
+  display: none;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 30px 20px 20px;
-  margin-top: 53px 0 0;
+  padding: 30px 20px 12px;
+  margin: 0px;
+  height: 600px;
 }
 
 /* Add list style image, change with js? when it's complete 
@@ -294,26 +379,26 @@ ul.sidebar-flyout {
 }
 
 ul.sidebar-flyout a {
-  color:white;
+  color: #e5e6e7;
   line-height: 2em;
-  font-size: 16px;
   text-decoration: none;
+  font-size: 15px;
+}
+
+#flyout-title {
+  font-size: 17px;
+  color:white;
+}
+
+#flyout-title span {
+  font-size: 20px;
 }
 
 ul li.sidebar-flyout {
-  list-style-image: url(../images/icons/checkmark-circle.png);
+  list-style-image: url(../images/icons/circle-grey.png);
 }
 
 
-
-/* START FOOTER **********************/
-
-/*
-#copyright {
-  width: 100%;
-  float:left;
-}
-*/
 
 
 /*******************************************
