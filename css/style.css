@@ -185,8 +185,11 @@ footer#copyright a:hover {
  STEP UP GAME/DASHBOARD PAGE STYLES
 *******************************************/
 
+
+/* START TOP NAV ************************/
+
 #admin-bar {
-  background-color: red;
+  background-color: #888;
   width: 100%;
   padding: 0px;
   margin: 0px;
@@ -197,31 +200,43 @@ footer#copyright a:hover {
   padding: 0px;
 }
 
+#admin-nav a {
+  padding: 0px 3px;
+}
+
+#admin-nav:first-child {
+  padding-left: 11px;
+}
+
+#admin-nav:last-child {
+  padding-right: 20px;
+}
+
+.row {
+  display: inline-block;
+}
 
 ul.admin-ul {
   list-style-type: none;
   font-size: 12px;
   margin: 0px;
-  padding: 0 20px 0;
 }
 
 ul.admin-ul li {
   list-style-image: url(../images/icons/checkmark-circle.png);
   list-style-position: outside;
   display: inline;
-  padding: 0 5px 0 0;
 }
 
 .admin-link-img {
   display: inline-block;
-  height: 30px; 
-  margin: 0px;
-  padding: 0px;  
+  height: 30px;  
 }
 
-#logout-link li {
-  padding-left:400px;
+#left-links {
+  float:right;
 }
+
 
 
 /* ? Is there a better way to do the nav? can't top align imgs and text when I use both
@@ -293,7 +308,7 @@ h1.page-name {
   color: white;
 }
 
-#right-column {
+#right-column-main-content {
     /*  display: inline-block; */
   display: inline-block;
   background-color: white;
@@ -322,6 +337,7 @@ h1.page-name {
   float: right;
   text-decoration: none;
   font-weight: bold;
+  font-size: 15px;
 }
 
 .next a:hover {

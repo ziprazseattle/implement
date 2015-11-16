@@ -22,14 +22,26 @@
 <!-- Top links/social media/account settings -->
 	<header id="admin-bar">
 		<nav id="admin-nav">
-			<ul class="admin-ul">
+
+
+			<ul class="admin-ul row">
+				<li><a href="#"><img class="admin-link-img" alt="Second Step program" src="images/second-step-logo.png"></a></li>
 				<li><a href="#"><img class="admin-link-img" alt="Home" src="images/icons/icon-profile.jpg"></a></li>
 				<li><a href="#"><img class="admin-link-img" alt="Home" src="images/icons/icon-profile.jpg"></a></li>
-				<li><a href="#"><img class="admin-link-img" alt="Home" src="images/icons/icon-profile.jpg"></a></li>
-				<li><a href="#"><img class="admin-link-img" alt="Home" src="images/icons/icon-profile.jpg"></a></li>
-				<li id="logout-link"><a href="#"><img class="admin-link-img" alt="Home" src="images/icons/icon-profile.jpg"></a></li>
-	
 			</ul>
+
+			<div class="row" id="center-links">
+				<a href="#"><img class="admin-link-img" alt="MidLink One" src="images/icons/icon-profile.jpg"></a>
+				<a href="#"><img class="admin-link-img" alt="Home" src="images/icons/icon-profile.jpg"></a>
+				<button>My Button</button>
+			</div>
+
+			<div class="row" id="left-links">
+				<a href="#"><img class="admin-link-img" alt="My Profile" src="images/icons/icon-profile.jpg"></a>
+				<a href="#"><img class="admin-link-img" alt="Account Settings" src="images/icons/icon-profile.jpg"></a>
+				<a href="#">Log off</a>
+			</div>
+
 		</nav>
 	</header>		
 
@@ -42,18 +54,22 @@
 	</div> <!-- end #page-content div   -->
 
 
-	<!-- right column content begins -->
-	<div id="info-content">	
+	<!-- right column begins with info-content div-->
+		<div id="info-content">	
 
 		
 
 		<!-- right column page content begins -->
 			<div id="checklist-banner">My List &#8675;
 			</div>
-			<div id="right-column">
+
+			<div id="right-column-main-content">
+				
+
 				<div class="sidebar-video">
 					<img id="sidebar-video-thumb" src="images/placeholder-video.jpg" alt="2 minute instructional video">
 				</div><!-- sidebar-video ends -->
+
 
 				<div class="sidebar-info-text">
 					<h3>Section Title Goes Here</h3>
@@ -77,10 +93,11 @@
 
 				</div><!-- sidebar-info-text ends -->
 
+
 				<div class="sidebar-progress">
 				</div><!-- sidebar-progress ends -->
 
-			</div><!-- right-column ends -->
+			</div><!-- right-column-main-content ends -->
 
 	 
 
@@ -122,7 +139,10 @@
 			</div> 
 
 
-		</div> <!-- end #info-content div   -->	<!-- right column content ends -->
+		</div> <!-- end #info-content div   -->	
+	<!-- right column ends -->
+
+
 
 <!-- ? Adding clear to footer (class="clear") or adding empty clear div didn't work
 	<div class="clear"></div> -->
