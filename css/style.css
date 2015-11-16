@@ -43,15 +43,18 @@ Amber Zipperer
 	padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
 
+
 /*******************************************
  STYLES INDEX & PERSISTANT 
 *******************************************/
 
+/* 
+If bckgd texture needed:; background: url(../images/X.jpg) no-repeat center center fixed; 
+*/
 body {
   font-size: 14px;
   line-height: 1.4;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  background: url(../images/X.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -63,7 +66,7 @@ body {
   margin: 0px;
 }
 
-/* ? Will 100% work for centering the container & bkgd img cover */
+/* ? Will 100% work for centering the container & when you use bkgd img cover */
 .container {
 	width: 100%;
 	margin: 0 auto;
@@ -71,7 +74,7 @@ body {
 } 
 
 #login-page-content {
-  url(background-image:  no-repeat )
+background: url(../images/x.jpg) #fff;
 }
 
 #left-content {
@@ -91,7 +94,7 @@ body {
 
 
 /* ? Right way to use h1 for SEO? Will h1 display if img breaks? */
-h1#page-name {
+h1#home-page-name {
   display: none; 
   font-weight: bold;
   font-size: 48px;
@@ -161,39 +164,80 @@ footer {
 }
 
 /*******************************************
- STEP UP GAME STYLES
+ STEP UP GAME/DASHBOARD PAGE STYLES
 *******************************************/
 
 #admin-bar {
   background-color: red;
-  width: 100%; 
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 
 #admin-nav {
-  display: inline;
+  margin: 0px;
+  padding: 0px;
 }
 
-ul.admin-links a {
+
+ul.admin-ul {
   list-style-type: none;
-  color:white;
   font-size: 12px;
-  display: inline;
+  margin: 0px;
+  padding: 0 20px 0;
 }
 
-ul li.admin-links a {
+ul.admin-ul li {
   list-style-image: url(../images/icons/checkmark-circle.png);
   list-style-position: outside;
-    display: inline;
+  display: inline;
+  padding: 0 5px 0 0;
+}
+
+.admin-link-img {
+  display: inline-block;
+  height: 30px; 
+  margin: 0px;
+  padding: 0px;  
+}
+
+#logout-link li {
+  padding-left:400px;
+}
+
+
+/* ? Is there a better way to do the nav? can't top align imgs and text 
+  vertical-align: text-top; 
+#logout-link {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
 
 }
+
+
+#logout-link a {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color:#000;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+*/
+
+
+/* START BODY ************************/
 
 #page-content {
   display: inline-block;
   width: 75%; 
   padding: 30px 30px 0px 30px;
 }
-/* ? Can I make background image display w/o specifying height? 
-    ? Why does adding cover break image? */
+
+/* ? Can I make background image display w/o specifying height?  */
 #game-content {
   background: url(../images/screen-placeholder.jpg) 100% center no-repeat #aeaeae;
   background-size: cover;
@@ -202,37 +246,74 @@ ul li.admin-links a {
   margin: 0px;
 }
 
+h1.page-name {
+  margin: 0px 0px 10px;
+  font-size: 24px;
+}
+
+
+
+
+/* START RIGHT COL PAGE CONTENT **********************/
+
 #info-content {
-  background-color: rgba(0, 0, 0, 0.7);
   display: inline-block;
   width: 25%;
   float:right; 
-  padding: 30px 20px 20px 0px;
+  padding: 0px 20px 20px 0px;
+}
+
+
+#checklist-banner {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 20px 20px;
+  margin: 0px;
+}
+
+#right-column {
+  background-color: black;
+  padding: 30px 20px 20px;
+  margin-top: 73px;
+}
+
+
+/* START RIGHT COL FLYOUT **********************/
+
+#right-column-flyout {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px 20px 20px;
+  margin-top: 53px 0 0;
 }
 
 /* Add list style image, change with js? when it's complete 
     ? Why text indent not working? Is list style position needed? */
-ul.sidebar {
+ul.sidebar-flyout {
   list-style-type: none;
-  color:white;
-  line-height: 1.8em;
-  font-size: 16px;
-  margin:0 0 10px 0;
+  margin: 0 0 10px 0;
   padding: 0 0 20px 20px;
 }
 
-ul li.sidebar {
+ul.sidebar-flyout a {
+  color:white;
+  line-height: 2em;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+ul li.sidebar-flyout {
   list-style-image: url(../images/icons/checkmark-circle.png);
-  list-style-position: outside;
-}
-
-ul li.section-head {
-  list-style-image: none;
-  font-size: 19px;
 }
 
 
 
+/* START FOOTER **********************/
+
+/*
+#copyright {
+  width: 100%;
+  float:left;
+}
+*/
 
 
 /*******************************************

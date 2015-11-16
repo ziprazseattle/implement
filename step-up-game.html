@@ -20,52 +20,80 @@
 <body>
 
 <!-- Top links/social media/account settings -->
-	<header id="admin-bar" class="clearfix clear">
+	<header id="admin-bar">
 		<nav id="admin-nav">
-			<ul class="admin-links">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Link1</a></li>
-				<li><a href="#">Link2</a></li>
-				<li><a href="#">Profile</a></li>
-				<li><a href="#">Settings</a></li>
+			<ul class="admin-ul">
+				<li><a href="#"><img class="admin-link-img" alt="Home" src="images/icons/icon-profile.jpg"></a></li>
+				<li><a href="#"><img class="admin-link-img" alt="Home" src="images/icons/icon-profile.jpg"></a></li>
+				<li><a href="#"><img class="admin-link-img" alt="Home" src="images/icons/icon-profile.jpg"></a></li>
+				<li><a href="#"><img class="admin-link-img" alt="Home" src="images/icons/icon-profile.jpg"></a></li>
+				<li id="logout-link"><a href="#"><img class="admin-link-img" alt="Home" src="images/icons/icon-profile.jpg"></a></li>
+	
 			</ul>
 		</nav>
-	</header>	
+	</header>		
+
 
 <!-- ? How does clear fix work?   -->	
 	<div id="page-content">	
+		<h1 class="page-name">Title Goes Here</h1>
 		<div id="game-content" class="clearfix clear">	
-			PAGE
 		</div> <!-- end #game-content div   -->
 	</div> <!-- end #page-content div   -->
-			
+
+
+	<!-- right column content begins -->
 	<div id="info-content" class="clearfix clear">	
-		<div id="right-column-flyout">
-				<ul class="sidebar">
-					<li class="section-head">Train Up</li>
-						<ul class="sidebar">
-							<li class="sidebar">Item One</li>
-							<li class="sidebar">Item Two</li>
-							<li class="sidebar">Item Three</li>
-						</ul>
 
-					<li class="section-head">Teach It</li>
-					<ul class="sidebar">
-							<li class="sidebar">Item One</li>
-							<li class="sidebar">Item Two</li>
-							<li class="sidebar">Item Three</li>
+	
+
+	<!-- right column page content  -->
+		<div id="checklist-banner">Check the list! 
+		</div>
+
+		<div>
+	<!-- right column page content ends -->
+
+ 
+
+		<!-- right column fly out content  -->
+		<div id="right-column-flyout"> 
+<!-- ? Are nested ul/li tags correct?  --> 
+
+				<ul class="sidebar-flyout">
+					<li><a href="#">Train Up</a>
+						<ul class="sidebar-flyout">
+							<li class="sidebar-flyout"><a href="#">Item One</a></li>
+							<li class="sidebar-flyout"><a href="#">Item Two</a></li>
+							<li class="sidebar-flyout"><a href="#">Item Three</a></li>
 						</ul>
-					<li class="section-head">Reinforce</li>
-					<ul class="sidebar">
-							<li class="sidebar">Item One</li>
-							<li class="sidebar">Item Two</li>
-							<li class="sidebar">Item Three</li>
+					</li>
+
+					<li><a href="#">Teach It</a>
+						<ul class="sidebar-flyout">
+							<li class="sidebar-flyout"><a href="#">Item One</a></li>
+							<li class="sidebar-flyout"><a href="#">Item Two</a></li>
+							<li class="sidebar-flyout"><a href="#">Item Three</a></li>
 						</ul>
+					</li>
+					<li><a href="#">Reinforce</a>
+					<ul class="sidebar-flyout">
+							<li class="sidebar-flyout"><a href="#">Item One</a></li>
+							<li class="sidebar-flyout"><a href="#">Item Two</a></li>
+							<li class="sidebar-flyout"><a href="#">Item Three</a></li>
+						</ul>
+					</li>
 				</ul>
-			</div> <!-- end div right-column -->
-	</div> <!-- end #info-content div   -->
+		<!-- end div right-column-flyout -->
+		</div> 
 
-<footer>
+
+	</div> <!-- end #info-content div   -->	<!-- right column content ends -->
+
+<!-- ? Adding clear to footer or adding empty clear div didn't work
+	<div class="clear"></div> -->
+
+<footer id="copyright" class="clear">
 	<small>Copyright Committee for Children 2015</small>
 </footer>
 
