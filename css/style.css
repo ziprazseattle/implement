@@ -161,7 +161,6 @@ p.feature-text a {
 /* START FOOTER **********************/
 
 footer#copyright {
-
     margin: 10px 30px;
 }
 
@@ -189,10 +188,10 @@ footer#copyright a:hover {
 /* START TOP NAV ************************/
 
 #admin-bar {
-  background-color: #888;
   width: 100%;
   padding: 0px;
   margin: 0px;
+  border-bottom: solid #acacac 1px;
 }
 
 #admin-nav {
@@ -201,11 +200,11 @@ footer#copyright a:hover {
 }
 
 #admin-nav a {
-  padding: 0px 3px;
+  padding: 0px 10px 0px 0px;
 }
 
 #admin-nav:first-child {
-  padding-left: 11px;
+  padding-left: 0px;
 }
 
 #admin-nav:last-child {
@@ -273,7 +272,6 @@ ul.admin-ul li {
 
 /* ? Can I make background image display w/o specifying height?  */
 #game-content {
-  background: url(../images/screen-placeholder.jpg) 100% center no-repeat #aeaeae;
   background-size: cover;
   height: 600px;
   padding: 0px;
@@ -284,6 +282,68 @@ h1.page-name {
   margin: 0px 0px 10px;
   padding: 0px;
   font-size: 24px;
+}
+
+
+#col-one {
+  display: inline-block;
+  background-color: rgba(200, 200, 200, .2);
+  width: 33%;
+  height: 700px;
+}
+
+#col-one-row-one {
+  background-color: purple;
+  height: 50%;
+  width: 100%;
+}
+
+#col-one-row-two {
+  background-color: yellow;
+  height: 50%;
+  width: 100%;
+}
+
+
+#col-two {
+  display: inline-block;
+  background-color: rgba(100, 100, 100, .2);
+  width: 66%;
+  height: 700px;
+}
+
+#col-two-row-one {
+  background-color: blue;
+  height: 12%;
+  width: 100%;
+}
+
+#col-two-row-two {
+  background-color: lime;
+  height: 44%;
+  width: 100%;
+}
+
+
+ul.progress-ul {
+  list-style-type: none;
+  font-size: 12px;
+  margin: 0px;
+}
+
+ul.progress-ul li {
+  list-style-image: url(../images/icons/checkmark-circle.png);
+  list-style-position: outside;
+  display: inline-block;
+}
+
+
+
+
+#col-two-row-three {
+  background-color: orange;
+  height: 44%;
+  width: 100%;
 }
 
 
@@ -307,6 +367,7 @@ h1.page-name {
   font-size: 12px;
   color: white;
 }
+
 
 #right-column-main-content {
     /*  display: inline-block; */
@@ -344,9 +405,7 @@ h1.page-name {
   color:#888;
 }
 
-
-
-
+/* Right col list items 
 ul li.sidebar-progress {
   list-style-image: url(../images/icons/pie.png);
   font-size: 15px;
@@ -356,7 +415,7 @@ ul li.sidebar-progress {
   vertical-align: middle;
 }
 
-/* ? How to postion list style images to vertically align with text?  **********************/
+ ? How to postion list style images to vertically align with text?  **********************
 
 #prep {
     list-style-image: url(../images/icons/pie-chart.png);
@@ -371,7 +430,7 @@ ul li.sidebar-progress {
     list-style-image: url(../images/icons/pie-left-top.png);
 }
 
-
+*/
 
 
 
