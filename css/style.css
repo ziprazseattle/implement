@@ -45,8 +45,9 @@ Amber Zipperer
 
 
 /*******************************************
- STYLES INDEX & PERSISTANT 
+ STYLES BODY PERSISTANT 
 *******************************************/
+
 
 /* 
 If bckgd texture needed:; background: url(../images/X.jpg) no-repeat center center fixed; 
@@ -73,6 +74,17 @@ body {
 	margin: 0 auto;
 
 } 
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/*******************************************
+ STYLES INDEX  
+*******************************************/
+
 
 #login-page-content {
 background: url(../images/x.jpg) #fff;
@@ -158,26 +170,6 @@ p.feature-text a {
   text-decoration: none;
 }
 
-/* START FOOTER **********************/
-
-footer#copyright {
-    margin: 10px 30px;
-}
-
-footer#copyright a {
-  color:black;
-  text-decoration: none;
-}
-
-footer#copyright a:hover {
-  color:orange;
-}
-
-/* ? Why won't Second Step italicize AND bold? **********************/
-.em {
-  font-style:italic;
-  font-weight: 700;
-}
 
 
 /*******************************************
@@ -236,6 +228,17 @@ ul.admin-ul li {
   float:right;
 }
 
+#logoff-link {
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #555;
+  font-variant: small-caps;
+}
+
+/* Why doesn't this work?? */
+#logoff-link a:hover {
+  color: orange;
+}
 
 
 /* ? Is there a better way to do the nav? can't top align imgs and text when I use both
@@ -266,7 +269,7 @@ ul.admin-ul li {
 #page-content {
   display: inline-block;
   width: 75%; 
-  padding: 30px 30px 0px 30px;
+  padding: 30px 15px 0px 30px;
 }
 
 
@@ -338,8 +341,6 @@ ul.progress-ul li {
 }
 
 
-
-
 #col-two-row-three {
   background-color: orange;
   height: 44%;
@@ -355,27 +356,51 @@ ul.progress-ul li {
   display: inline-block;
   width: 25%;
   float:right; 
-  padding: 0px 20px 20px 0px;
+  padding: 0px 0px 20px 0px;
 }
 
 
 #checklist-banner {
+  position: relative;
   background-color: #888;
-  padding: 8px 20px;
-  margin: 40px 0px 0px;
-  font-weight: bold;
-  font-size: 12px;
-  color: white;
+  margin: 30px 0px 0px;
+  padding: 8px 20px 10px;
 }
 
 
-#right-column-main-content {
-    /*  display: inline-block; */
+#checklist-banner a {
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+}
+
+
+.a-span { 
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  padding: 8px 20px;
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  /* edit: added z-index */
+  z-index: 1;
+  /* edit: fixes overlap error in IE7/8, 
+     make sure you have an empty gif */
+  background-image: url('empty.gif');
+}   
+
+
+#right-column-layer1 {
+    /*  display: inline-block; height: 665px; */
   display: inline-block;
   background-color: white;
   padding: 30px 20px 12px;
   margin: 0px;
-  height: 600px;
+  height: 663px;
 }
 
 .sidebar-video {
@@ -437,13 +462,14 @@ ul li.sidebar-progress {
 /* START RIGHT COL FLYOUT **********************/
 
 #right-column-flyout {
-  /*  display: block; */
+  /*  display: block; height: 0px; */
   display: none;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #fff;
   padding: 30px 20px 12px;
   margin: 0px;
-  height: 600px;
+  height: 663px;
 }
+
 
 /* Add list style image, change with js? when it's complete 
     ? Why text indent not working? Is list style position needed? */
@@ -454,15 +480,14 @@ ul.sidebar-flyout {
 }
 
 ul.sidebar-flyout a {
-  color: #e5e6e7;
   line-height: 2em;
   text-decoration: none;
   font-size: 15px;
+  color: #666;
 }
 
 #flyout-title {
   font-size: 17px;
-  color:white;
 }
 
 #flyout-title span {
@@ -475,21 +500,43 @@ ul li.sidebar-flyout {
 
 
 
+/* START FOOTER **********************/
 
+footer#copyright {
+    margin: 10px 30px;
+}
+
+footer#copyright a {
+  color:black;
+  text-decoration: none;
+}
+
+footer#copyright a:hover {
+  color:orange;
+}
+
+/* ? Why won't Second Step italicize AND bold? **********************/
+.em {
+  font-style:italic;
+  font-weight: 700;
+}
+
+
+/*
 /*******************************************
  STEP UP DASHBOARD STYLES
-*******************************************/
+*******************************************
 
-/* ? Want to keep widths responsive */
+ Want to keep widths responsive 
 #central-content {
 	width: 75%;
 	min-width: 300px;
 	background-color: rgba(255,255,255,.2);
 }
 
-/*
 
-When an <input type="text"> gets focus, gradually change the width from 100px to 250px:
+
+ When an <input type="text"> gets focus, gradually change the width from 100px to 250px:
 input[type=text] {
     width: 100px;
     transition: ease-in-out, width .35s ease-in-out;
@@ -500,4 +547,3 @@ input[type=text]:focus {
 }
 
 */
-
