@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 
-/* js is connected 
+/* TEST - js is connected! 
 function myFunction() {
     alert("Hello!");
 }
@@ -9,17 +9,56 @@ myFunction();
 */
 
 
-//.addClass()
 
-	$("#prep").click(advance);
+
+//THINGS TO EMPLOY 
+//.addClass()
+// .before()
+//.hide()
+
+
+
+
+
+/* PIE CHARTS - PREVIOUS WORKING CODE  
+
+$("#prep").click(advance);
 
 	function advance(){ 
 		$("li#prep").css("color", "purple");
-		$("li#prep").css("list-style-image", "url(images/icons/pie-left-bottom.png)")
-		}
+		$("li#prep").css("list-style-image", "url(images/icons/pie-right.png)");
+}
+
+*/
+
+// PIE CHARTS - REPLACED WITH ONE TIME CLICK 
+
+	$("#prep").one( "click", function() { 
+  		$("li#prep").css("color", "purple");
+		$("li#prep").css("list-style-image", "url(images/icons/pie-left.png)");
+
+	});
 
 
-	
+	$("#delivery").one( "click", function() { 
+  		$("li#delivery").css("color", "purple");
+		$("li#delivery").css("list-style-image", "url(images/icons/pie-3-4-bottom-left.png)");
+
+	});
+
+	$("#effect").one( "click", function() { 
+  		$("li#effect").css("color", "purple");
+		$("li#effect").css("list-style-image", "url(images/icons/pie-full.png)");
+
+	});
+
+	$( "#effect" ).on( "click", function( event ) {
+	  alert( "Training is complete! Congratulations" );
+	  $( this ).off( event );
+	});
+
+
+
 
 
 //flyout dashboard window on right
@@ -41,14 +80,15 @@ myFunction();
 		function showList(){
 			$("#right-column-layer1").fadeToggle("fast","linear");
 			$("#right-column-flyout").fadeToggle("fast","linear");
+			$("#checklist-banner-a").html("Back to Content &#8673;");
 		}
 
 
-	$("#slider").slick();
 
 
-/*
 
+
+/* TEXT REPLACEMENT ON RIGHT COL CHECKLIST BANNER 
 
 $("#checklist-banner").click(titleList); 
 
@@ -65,6 +105,7 @@ $("#checklist-banner").click(changeHTML);
 		$("#checklist-banner-a").html("My List &#8675;");
 	}
 
+LAST APPROACH 
 
 $("#checklist-banner:last").click(showContent); 
 	function showContent(){
@@ -80,6 +121,53 @@ $("#checklist-banner:last").click(showContent);
                toggleSelected = true;
            } 
 });
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+IF ELSE RANDOMNESS
+
+		var image = $("li#prep").css("list-style-image", "url(images/icons/pie-right.png)").val(); 
+
+		if (.css("list-style-image")) == ("url(images/icons/pie-right.png)") {
+			$("li#prep").css("list-style-image", "url(images/icons/pie-3-4-bottom-right.png)");
+		}
+
+
+
+
+		if (.css("list-style-image")) == ("url(images/icons/pie-right.png)")
+			{
+				$("li#prep").css("list-style-image", "url(images/icons/pie-3-4-bottom-right.png)");
+			}
+
+	
+		 	else if ($("li#prep")).is("list-style-image", "url(images/icons/pie-3-4-bottom-right.png)")
+			{
+				$("li#prep").css("list-style-image", "url(images/icons/pie-full.png)");
+			}
+
+
+
+		if () {
+
+		}
+
+
+
+
+
+
+// FOR SLIDER	$("#slider").slick();
 
 */
 

@@ -416,15 +416,15 @@ h1.page-name {
 }
 
 li#prep {
-  list-style-image:url(../images/icons/pie-right-bottom.png);
+  list-style-image:url(../images/icons/pie-left-top.png);
 }
 
 li#delivery {
-  list-style-image:url(../images/icons/pie-left-top.png); 
+  list-style-image:url(../images/icons/pie-hazard1.png); 
 }
 
 li#effect {
-  list-style-image:url(../images/icons/pie-left-bottom.png); 
+  list-style-image:url(../images/icons/pie-3-4-top-right.png); 
 }
 
 
