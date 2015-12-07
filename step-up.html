@@ -13,8 +13,8 @@
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+<!--	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>  -->
+<!--	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>  -->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,300italic,300,400italic,400' rel='stylesheet' type='text/css'>
 
 </head>
@@ -60,7 +60,15 @@
 					<div id="col-one-row-one">
 							<div class="text-overlay">
 
-								<h4>Bob Ross Says:</h4>
+								<h3>Amber Zipperer</h3>
+
+								<h4>Achievements</h4>
+
+								<p>Two chapters and one video<br />
+
+								Level One complete - 90% correct</p>
+
+								<h4>Today's Inspiration: Bob Ross Quotes</h4>
 
 								<p>"If you don't like it - change it. This piece of canvas is your world."</p>
 
@@ -73,7 +81,13 @@
 
 
 					<div id="col-one-row-two">
-							<h3>Amber Zipperer<h3>
+							<h3>Recent Activity</h3>
+							<p class="before"><span>Learn to reinforce student learning.</span> <br>
+							Apply the teaching methods you've learned to everyday classroom situations. Strengthen students' abilities to apply social-emotional skill and resolve conflict on their own.</p>
+
+						
+							<p class="after"><span>Step up your training skills.</span> <br>Walk into the classroom confident and prepared with alternate lesson plans for all those unexpected situations. </p>
+
 					</div> <!-- end #col-one-row-two div   -->
 
 			</div> <!-- end #col-one div   -->
@@ -96,23 +110,48 @@
 
 								<li class="progress" id="effect">Training
 								</li>
+								
+								<li id="progress-message">Click topic to update your progress.
+								</li>
 
 							</ul>
 
 					</div><!-- #col-two-row-one ends -->
 
-
+						
+					
 
 					<div id="col-two-row-two" class="clear">
+						
+							<hr>
 
-							
+							<h3 id="maze-title">Negotiate the Maze <span id="maze-instructions">Notes</span> <span id="maze-topics">Skills</span></h3>
+
+							<p id="maze-instruction-text">Time yourself as you move Whiskers through the maze. If she touches the wall more than twice, start over by refreshing the page. How many times does it take you?</p>
+
+							<p id="maze-topics-text">Measures manual dexterity, eye-hand coordination, attention to small details and tolerance of frustration. </p>
+
 					</div><!-- end #col-two-row-two   -->
 
 
-
-
 					<div id="col-two-row-three">
-							<p>Testing this paragraph content</p>
+							
+							
+						<div id="main-maze">
+
+								<img id="mouse" src="images/mouse-gray-ears.png" alt="Use arrow buttons to move me" title="Use arrow buttons to move me" />
+
+								<div id="controls"><a id="arrow-buttons"></a>
+									
+									<button class="maze-button" id="up">&#8673;</button>
+									<button class="maze-button" id="right">&#8672;</button>
+									<button class="maze-button" id="left">&#8674;</button>
+									<button class="maze-button" id="down">&#8675;</button>
+								
+								</div>  <!-- end #controls   -->
+							</div><!-- end #main-maze   -->
+
+
 					</div><!-- end #col-two-row-three div   -->
 				
 			</div> <!-- end #col-two   -->
@@ -154,7 +193,7 @@
 						<div class="sidebar-info-text">
 
 
-							<h3>Section Title Goes Here</h3>
+							<h3>Teach It: Section One</h3>
 							<p>Fatback chuck enim sed ut pariatur, bacon meatloaf corned beef eu venison. Shank filet mignon, ribeye andouille tongue cillum sint cow ball tip, ham dolor capicola kielbasa non.</p>
 							<p>Ribeye andouille tongue cillum sint cow ball tip, ham fatback chuck enim sed ut pariatur, bacon meatloaf corned beef eu venison. Shank filet mignon, dolor capicola kielbasa non.</p>
 							<p>Meatloaf corned beef eu venison. Shank filet mignon, ribeye andouille tongue cillum sint cow ball tip, ham dolor capicola kielbasa non. <span class="next"><a href="#">next</span></a></p>
@@ -222,6 +261,8 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	 <script src="js/index.js"></script> 
-	<script type="text/javascript" src="slick/slick.min.js"></script>
+<!--	<script type="text/javascript" src="slick/slick.min.js"></script> -->
+	<script src="js/jquery-1.11.1.js">
+</script>
 </body>
 </html> 

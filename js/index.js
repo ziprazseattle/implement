@@ -11,10 +11,33 @@ myFunction();
 
 
 
-//THINGS TO EMPLOY 
-//.addClass()
+// OTHER THINGS TO TRY 
+// .addClass()
 // .before()
-//.hide()
+// .hide()
+
+
+
+/* PREPEND WORKING, REPEATS 
+
+	$(".before").hover(first);
+
+	 	function first() {
+		$(".before").prepend( "<p>First complete the Reinforce chapter</p>" );
+		}
+*/
+
+// PREPEND/APPEND CLICK ONLY ONCE WORKING
+
+	$( ".before" ).one( "click", function() {
+		  $(".before").prepend( "<strong>Wait! First complete the 'Teach It' section.<br></strong>" );
+	});
+
+
+	$( ".after" ).one( "click", function() {
+		  $(".after").append( "<p style='font-weight:bold;margin-top:0px;padding-top:0px;'>You've completed this chapter. Nice Work!</p>" );
+	});
+
 
 
 
@@ -27,7 +50,7 @@ $("#prep").click(advance);
 	function advance(){ 
 		$("li#prep").css("color", "purple");
 		$("li#prep").css("list-style-image", "url(images/icons/pie-right.png)");
-}
+	}
 
 */
 
@@ -52,16 +75,74 @@ $("#prep").click(advance);
 
 	});
 
-	$( "#effect" ).on( "click", function( event ) {
-	  alert( "Training is complete! Congratulations" );
-	  $( this ).off( event );
+	$( "#effect" ).one( "click", function( event ) {
+		 alert( "Training is complete. Congratulations!" );
+		 $( this ).off( event );
 	});
 
 
 
 
 
-//flyout dashboard window on right
+
+// SHOW HIDE 
+
+// hides all content on page load 
+			$("#maze-instruction-text, #maze-topics-text").hide();
+			
+			$( "#maze-instructions" ).click(function() {
+				$("#maze-instruction-text").slideToggle("slow");
+			});
+
+			$( "#maze-topics" ).click(function() {
+				$("#maze-topics-text").slideToggle("slow");
+			});
+
+
+
+
+
+// MOUSE IMAGE  
+
+	$( "#mouse" ).click(function() {
+  		$( "#up" ).focus();
+
+	});
+
+
+
+
+
+// MAZE ANIMATION 
+
+	 $("#up").click( function() {
+		 	$("#mouse").animate({ top:"-=5px"}, "fast", "swing");
+		 
+	});
+	
+	
+	 $("#down").click( function() {
+	 	$("#mouse").animate({ top:"+=5px"}, "fast", "swing");
+	 
+	});
+	
+		 $("#right").click( function() {
+	 	$("#mouse").animate({ left:"-=5px"}, "fast", "swing");
+	 
+	});
+	
+	
+	 $("#left").click( function() {
+	 	$("#mouse").animate({ left:"+=5px"}, "fast", "swing");
+	 
+	});
+
+
+
+
+
+
+// FLYOUT DASHBOARD WINDOW - RIGHT COL
 
 	$("#checklist-banner").mouseenter(goOrange);
 	$("#checklist-banner").mouseleave(goGrey);
