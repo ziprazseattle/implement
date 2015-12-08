@@ -64,7 +64,6 @@ body {
 /*  line-height: 1.4;  */
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
-  max-width: 1600px;
 }
 
 * {
@@ -434,7 +433,7 @@ h1.page-name {
 /* Progress list: Added extra left padding to accomodate removal of list-style-position: inside; */
 
 .progress-ul {
-  padding: 15px 20px 30px 35px;
+  padding: 15px 20px 30px 25px;
   list-style-position: inside;
 }
 
@@ -475,7 +474,7 @@ li#progress-message {
 
 
 
-/* COL TWO ROW TWO DELETED ***********************
+/* COL TWO ROW TWO ************************/
 
 
 #col-two-row-two {
@@ -483,8 +482,22 @@ li#progress-message {
   padding: 0px 25px 0px 30px; 
 }
 
+#maze-title {
+  padding:  10px 0px;
+}
 
-*/
+#maze-instructions, #maze-topics {
+  color: orange;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 0px 0px 0px 8px;
+}
+
+#maze-instructions:hover, #maze-topics:hover  {
+  text-decoration: underline;
+  color: #444;
+}
+
 
 /* COL TWO ROW THREE ************************/
 
@@ -495,35 +508,6 @@ li#progress-message {
   padding: 0px;
 }
 
-.hr-body-separator {
-  margin: 15px 0px 0px 35px;
-  border: dotted 3px rgba(200, 200, 200, .3);
-}
-
-/* see .left-margin class for hr  */
-
-#maze-title {
-  padding:  10px 25px 0px 35px;
-}
-
-#maze-instructions, #maze-topics {
-  color: orange;
-  font-size: 12px;
-  font-weight: 300;
-  padding: 0px 0px 0px 8px;
-}
-
-#maze-instruction-text, #maze-topics-text {
-  padding: 5px 0px 10px 35px;
-}
-
-
-#maze-instructions:hover, #maze-topics:hover  {
-  text-decoration: underline;
-  color: #444;
-}
-
-
 #main-maze-wrapper {
   background: url(../images/lrk-maze.png) no-repeat top center; 
   background-size: contain; 
@@ -531,22 +515,22 @@ li#progress-message {
 }
 
 
-
 #main-maze {
     position: relative;
+
 }
 
 /* Must declare mouse img position for jquery button animation to work */
 #mouse {
   width: 18px;
   position: absolute;
-  top: 10px;
-  left: 285px; 
+  top: 255px;
+  left: 145px; 
 }
 
 /* Will not text align center w/ float. But forces top margin with display inline-block or block  */
 #controls {
-  margin: 30px 0px 0px 0px;
+  margin: 0px;
   padding: 0px;
   text-align: center;
   vertical-align: top;
