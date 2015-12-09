@@ -102,7 +102,6 @@ background: url(../images/x.jpg) #fff;
 #left-content {
   display: inline-block;
   width: 50%;
-
 }
 
 #right-content {
@@ -231,6 +230,7 @@ TOP NAV ***********************
   display: inline-block;
 }
 
+
 ul.admin-ul {
   list-style-type: none;
   font-size: 12px;
@@ -238,7 +238,6 @@ ul.admin-ul {
 }
 
 ul.admin-ul li {
-  list-style-image: url(../images/icons/checkmark-circle.png);
   list-style-position: outside;
   display: inline;
   padding: 0px 20px 0px 0px;
@@ -290,7 +289,7 @@ ul.admin-ul li {
   
 .img-opaque:hover { opacity: 0.3; 
     filter: alpha(opacity=30);
-}
+} 
 
 
 /* Effects thanks to http://www.corelangs.com/css/box/hover.html 
@@ -421,7 +420,6 @@ h1.page-name {
   height: 700px;
   overflow: hidden;
 }
-
 
 
 /* COL TWO ROW ONE ************************/
@@ -592,11 +590,11 @@ START RIGHT COL PAGE CONTENT *********************
 #checklist-banner {
   background-color: #888;
   margin: 30px 0px 0px;
-  padding: 8px 20px 10px;
+  padding: 2px 20px 11px;
 }
 
 /* Note: Direct parent content of absolute items needs to be relative, not grandparent */
-#checklist-banner a {
+#checklist-banner p {
   position: relative; 
   font-weight: bold;
   font-size: 12px;
@@ -632,8 +630,6 @@ START RIGHT COL PAGE CONTENT *********************
   height: 663px;
 }
 
-
-
 .sidebar-video {
   padding: 0px;
   margin: 0px;
@@ -648,7 +644,12 @@ START RIGHT COL PAGE CONTENT *********************
   font-size: 13px;
   line-height: 21px;
 }
-
+ul.sidebar-flyout a {
+  line-height: 2em;
+  text-decoration: none;
+  font-size: 15px;
+  color: #666;
+}
 #answer {
   color: orange;
   font-variant: small-caps;
@@ -770,7 +771,27 @@ MEDIA QUERIES *********************************
       width: 100%;
       }
 
-     #info-content {
+      #col-two-row-one {
+        height: 6%;
+      }
+
+      .progress-ul {
+        padding: 0px 15px 0px 10px;
+      }
+
+      .progress-ul li {
+        margin: 0px 20px 0px 0px;
+      }
+
+      .hr-body-separator {
+        margin: 10px 0px 0px 15px;
+      }
+
+      #maze-title {
+        padding:  10px 25px 0px 15px;
+      }
+
+      #info-content {
         width: 30%;
       }
 
@@ -780,7 +801,7 @@ MEDIA QUERIES *********************************
 
       .media-1020 {
         display: none;
-    }
+      }
 
 /* end media 1019 - 700  */ 
 }
@@ -792,16 +813,164 @@ MEDIA QUERIES *********************************
     #mouse {
         width: 15px;
     }    
-/* end media 850 - 780  */ 
+/* end mouse adustment 850 - 780  */ 
 }
 
 @media screen and (max-width: 779px) and (min-width: 700px) {
     #mouse {
         width: 13px;
     }    
-/* end media 779-699  */ 
+/* end mouse adustment 779-699  */ 
 } 
 
 
 
+@media screen and (max-width: 699px) and (min-width: 300px) {
+  
+      body {
+        font-size: 16px;
+      }
 
+      #page-content {
+        width: 100%; 
+        padding: 15px 15px 0px 0px;
+      }
+
+      ul.admin-ul {
+        font-size: 16px;
+      }
+
+      li#progress-message {
+        font-size: 14px;
+        margin-bottom: 10px
+      }
+
+      #col-one {
+        height: 0px;
+      }
+
+      #col-two {
+        width: 100%;
+      }
+
+      #maze-title {
+        font-size: 18px;
+      }
+
+      #maze-instructions, #maze-topics {
+        font-size: 14px;
+      }
+
+      #main-maze-wrapper {
+        background: url(../images/lrk-maze.png) no-repeat top center; 
+        background-size: contain; 
+        height: 100%;
+      }
+
+      #mouse {
+        width: 15px;
+        top: 43px;
+        left: 315px; 
+      }  
+
+     #info-content {
+        width: 100%;
+      }
+
+      #checklist-banner {
+        margin: 30px 0px;
+      }
+
+      #checklist-banner {
+        margin: 30px 0px 0px;
+        padding: 0px 20px 10px;
+      }
+
+      #checklist-banner p {
+        font-size: 16px;
+      }
+
+      .a-span { 
+        font-size: 16px;
+      }   
+
+      #right-column-flyout {
+        width: 100%;
+      }
+
+      #flyout-title {
+        font-size: 21px;
+      }
+
+      #flyout-title span {
+        font-size: 21px;
+      }
+
+      ul.sidebar-flyout a {
+        line-height: 2em;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      #answer {
+        font-size: 18px;
+      }
+
+      .sidebar-info-text { 
+        font-size: 16px;
+        line-height: 21px;
+      }
+
+      footer#copyright {
+          font-size: 1em;
+      }
+
+
+/* end media 699 - 300  */ 
+} 
+
+
+@media screen and (max-width: 599px) and (min-width: 444px) {
+    #mouse {
+        width: 13px;
+    }    
+/* end mouse adustment 599 - 400  */ 
+} 
+
+
+@media screen and (max-width: 443px) and (min-width: 300px) {
+
+    .media-443 {
+        display: none;
+    }
+
+    #right-links {
+      display: inline-block;
+    }
+
+    #right-links a {
+      padding-right: 20px;
+    }
+
+
+    #admin-nav:last-child {
+      padding-right: 10px;
+    }
+
+    #admin-bar {
+      padding: 5px 0 0 15px;
+    }
+
+    #mouse {
+        width: 10px;
+    }    
+/* end media 400 */ 
+} 
+
+
+@media screen and (max-width: 299px) and (min-width: 0px) {
+    #mouse {
+        width: 8px;
+    }    
+/* end mouse adustment 299 */ 
+} 
