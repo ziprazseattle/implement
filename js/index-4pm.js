@@ -11,7 +11,7 @@ myFunction();
 
 
 
-//  OTHER THINGS TO TRY 
+// OTHER THINGS TO TRY 
 // .addClass()
 // .before()
 // .hide()
@@ -116,24 +116,24 @@ $("#prep").click(advance);
 // MAZE ANIMATION 
 
 	 $("#up").click( function() {
-		 	$("#mouse").animate({ top:"-=4px"}, "fast", "swing");
+		 	$("#mouse").animate({ top:"-=5px"}, "fast", "swing");
 		 
 	});
 	
 	
 	 $("#down").click( function() {
-	 	$("#mouse").animate({ top:"+=4px"}, "fast", "swing");
+	 	$("#mouse").animate({ top:"+=5px"}, "fast", "swing");
 	 
 	});
 	
 		 $("#right").click( function() {
-	 	$("#mouse").animate({ left:"-=4px"}, "fast", "swing");
+	 	$("#mouse").animate({ left:"-=5px"}, "fast", "swing");
 	 
 	});
 	
 	
 	 $("#left").click( function() {
-	 	$("#mouse").animate({ left:"+=4px"}, "fast", "swing");
+	 	$("#mouse").animate({ left:"+=5px"}, "fast", "swing");
 	 
 	});
 

@@ -497,8 +497,10 @@ li#progress-message {
 
 .hr-body-separator {
   margin: 15px 0px 0px 35px;
-  border: dotted 3px rgba(200, 200, 200, .3); 
+  border: dotted 3px rgba(200, 200, 200, .3);
 }
+
+/* see .left-margin class for hr  */
 
 #maze-title {
   padding:  10px 25px 0px 35px;
@@ -534,17 +536,17 @@ li#progress-message {
     position: relative;
 }
 
-/*  Must declare mouse img position for jquery button animation to work  */
+/* Must declare mouse img position for jquery button animation to work */
 #mouse {
   width: 18px;
   position: absolute;
-  top: 33px;
+  top: 10px;
   left: 285px; 
 }
 
 /* Will not text align center w/ float. But forces top margin with display inline-block or block  */
 #controls {
-  margin: 20px 0px 0px 0px;
+  margin: 30px 0px 0px 0px;
   padding: 0px;
   text-align: center;
   vertical-align: top;
@@ -637,10 +639,6 @@ START RIGHT COL PAGE CONTENT *********************
 .sidebar-video {
   padding: 0px;
   margin: 0px;
-}
-
-#sidebar-video-thumb {
-  width: 100%;
 }
 
 .sidebar-info-text { 
@@ -739,68 +737,6 @@ footer#copyright a:hover {
 }
 
 
-
-/* 
-**********************************
-MEDIA QUERIES *********************************
-**********************************
-*/
-
-
-
-@media screen and (max-width: 1200px) and (min-width: 1020px) {
-    #mouse {
-      width: 15px;
-    }    
-/* end media 1200 - 1020  */ 
-}
-
-
-@media screen and (max-width: 1019px) and (min-width: 700px) {
-
-    #col-one {
-      height: 0px;
-      }
-
-    #page-content {
-      width: 70%; 
-      }
-
-     #col-two {
-      width: 100%;
-      }
-
-     #info-content {
-        width: 30%;
-      }
-
-      #right-column-flyout {
-        width: 100%;
-      }
-
-      .media-1020 {
-        display: none;
-    }
-
-/* end media 1019 - 700  */ 
-}
-
-
-
-
-@media screen and (max-width: 850px) and (min-width: 780px) {
-    #mouse {
-        width: 15px;
-    }    
-/* end media 850 - 780  */ 
-}
-
-@media screen and (max-width: 779px) and (min-width: 700px) {
-    #mouse {
-        width: 13px;
-    }    
-/* end media 779-699  */ 
-} 
 
 
 

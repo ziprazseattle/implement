@@ -30,17 +30,17 @@ Amber Zipperer
 } 
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 .alignright {
-	float: right;
-	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
 }
 
 .alignleft {
-	float: left;
-	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
 
 
@@ -64,6 +64,7 @@ body {
 /*  line-height: 1.4;  */
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
+  max-width: 1600px;
 }
 
 * {
@@ -73,8 +74,8 @@ body {
 
 /* ? Will 100% work for centering the container & when you use bkgd img cover */
 .container {
-	width: 100%;
-	margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 } 
 
 ul {
@@ -433,7 +434,7 @@ h1.page-name {
 /* Progress list: Added extra left padding to accomodate removal of list-style-position: inside; */
 
 .progress-ul {
-  padding: 15px 20px 30px 25px;
+  padding: 15px 20px 30px 35px;
   list-style-position: inside;
 }
 
@@ -474,7 +475,7 @@ li#progress-message {
 
 
 
-/* COL TWO ROW TWO ************************/
+/* COL TWO ROW TWO DELETED ***********************
 
 
 #col-two-row-two {
@@ -482,22 +483,8 @@ li#progress-message {
   padding: 0px 25px 0px 30px; 
 }
 
-#maze-title {
-  padding:  10px 0px;
-}
 
-#maze-instructions, #maze-topics {
-  color: orange;
-  font-size: 12px;
-  font-weight: 300;
-  padding: 0px 0px 0px 8px;
-}
-
-#maze-instructions:hover, #maze-topics:hover  {
-  text-decoration: underline;
-  color: #444;
-}
-
+*/
 
 /* COL TWO ROW THREE ************************/
 
@@ -508,6 +495,33 @@ li#progress-message {
   padding: 0px;
 }
 
+.hr-body-separator {
+  margin: 15px 0px 0px 35px;
+  border: dotted 3px rgba(200, 200, 200, .3); 
+}
+
+#maze-title {
+  padding:  10px 25px 0px 35px;
+}
+
+#maze-instructions, #maze-topics {
+  color: orange;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 0px 0px 0px 8px;
+}
+
+#maze-instruction-text, #maze-topics-text {
+  padding: 5px 0px 10px 35px;
+}
+
+
+#maze-instructions:hover, #maze-topics:hover  {
+  text-decoration: underline;
+  color: #444;
+}
+
+
 #main-maze-wrapper {
   background: url(../images/lrk-maze.png) no-repeat top center; 
   background-size: contain; 
@@ -515,22 +529,22 @@ li#progress-message {
 }
 
 
+
 #main-maze {
     position: relative;
-
 }
 
-/* Must declare mouse img position for jquery button animation to work */
+/*  Must declare mouse img position for jquery button animation to work  */
 #mouse {
   width: 18px;
   position: absolute;
-  top: 255px;
-  left: 145px; 
+  top: 33px;
+  left: 285px; 
 }
 
 /* Will not text align center w/ float. But forces top margin with display inline-block or block  */
 #controls {
-  margin: 0px;
+  margin: 20px 0px 0px 0px;
   padding: 0px;
   text-align: center;
   vertical-align: top;
@@ -552,6 +566,20 @@ li#progress-message {
   color:#fff;
   font-weight: bolder;
 }
+
+
+
+
+/* 
+**********************************
+COL 4  *********************
+**********************************
+*/
+
+#col-four {
+  display:none;
+}
+
 
 
 /* 
@@ -722,6 +750,227 @@ footer#copyright a:hover {
 
 
 
+/* 
+**********************************
+MEDIA QUERIES *********************************
+**********************************
+*/
 
+
+@media screen and (max-width: 1019px) and (min-width: 684px) {
+  #mouse {
+  width: 12px;
+  position: absolute;
+  top: 37px;
+  left: 228px;
+  }
+
+  .media-1020 {
+    display: none;
+  }
+
+
+    /* COLS ************************/
+
+
+    #col-one {
+      float: left;
+      width: 50%;
+      height: auto;
+
+    /* Current styles
+      float:left;
+      background-color: rgba(200, 200, 200, .3);
+      height: 700px;
+      overflow: hidden;
+    */ 
+    }
+
+    #col-two {
+      display: none;
+
+    /* Current styles
+      float:right;
+      width: 66%;
+      height: 700px;
+      overflow: hidden;
+    */ 
+    }
+
+
+    #info-content {
+      float:right;
+      width: 50%;
+      height: auto;
+    /* Current styles
+      display: inline-block;
+      width: 25%;
+      float:right; 
+      padding: 0px 0px 20px 0px;
+      overflow: hidden;
+    */
+    }
+
+
+    #right-column-flyout {
+
+    /* Current styles
+      display: block; 
+      height: 0px; 
+      display: none;
+      border-left: solid #666 1px;
+      border-bottom: solid #666 1px;
+      padding: 30px 20px 12px;
+      margin: 0px;
+      height: 663px;
+      overflow: hidden;
+    */ 
+    }
+
+
+    /* COL FOUR ************************/
+
+    #col-four {
+      background-color: blue;
+      display: inline-block;
+      width: 100%;
+/*      overflow: hidden; */
+    }
+
+
+
+    /* COL FOUR ROW ONE ************************/
+
+    #col-four-row-one {
+      height: 10%;
+      width: 100%;
+    }
+
+    /* Progress list: Added extra left padding to accomodate removal of list-style-position: inside; */
+
+    .progress-ul {
+      padding: 15px 20px 30px 35px;
+      list-style-position: inside;
+    }
+
+    /* Progress list <li>: Removed list-style-position: inside; to display correctly in Safari 
+      ? Firefox won't show padding or margin between list items?  */
+    .progress-ul li {
+      font-size: 15px;
+      font-weight: 700;
+      float:left;
+      margin: 0px 15px 0px 0px;
+       /* background: url(../images/icons/pie.png) left top no-repeat; */
+    }
+
+    li#prep {
+      list-style-image:url(../images/icons/pie-left-top.png);
+    }
+
+    li#delivery {
+      list-style-image:url(../images/icons/pie-hazard1.png); 
+    }
+
+    li#effect {
+      list-style-image:url(../images/icons/pie-3-4-top-right.png); 
+    }
+
+    li#progress-message {
+      font-size: 12px;
+      font-weight: 300;
+      padding: 7px 0px 0px 0px;
+      list-style: none;
+    }
+
+
+    */
+
+    /* COL FOUR ROW THREE ************************/
+
+    #col-four-row-three {
+      height: 70%;
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .hr-body-separator {
+      margin: 15px 0px 0px 35px;
+      border: dotted 3px rgba(200, 200, 200, .3); 
+    }
+
+    #maze-title {
+      padding:  10px 25px 0px 35px;
+    }
+
+    #maze-instructions, #maze-topics {
+      color: orange;
+      font-size: 12px;
+      font-weight: 300;
+      padding: 0px 0px 0px 8px;
+    }
+
+    #maze-instruction-text, #maze-topics-text {
+      padding: 5px 0px 10px 35px;
+    }
+
+
+    #maze-instructions:hover, #maze-topics:hover  {
+      text-decoration: underline;
+      color: #444;
+    }
+
+
+    #main-maze-wrapper {
+      background: url(../images/lrk-maze.png) no-repeat top center; 
+      background-size: contain; 
+      height: 100%;
+    }
+
+
+
+    #main-maze {
+        position: relative;
+    }
+
+    /*  Must declare mouse img position for jquery button animation to work  */
+    #mouse {
+      width: 18px;
+      position: absolute;
+      top: 33px;
+      left: 285px; 
+    }
+
+    /* Will not text align center w/ float. But forces top margin with display inline-block or block  */
+    #controls {
+      margin: 20px 0px 0px 0px;
+      padding: 0px;
+      text-align: center;
+      vertical-align: top;
+    }
+
+
+    .maze-button {
+      background-color:#888;
+      color: white;
+      font-weight: bold; 
+      padding: 5px 10px;
+      font-size: 14px;
+      margin: 0px 3px;
+    }
+
+    .maze-button:focus {
+      background-color: orange;
+      outline: #444 solid 2px;
+      color:#fff;
+      font-weight: bolder;
+    }
+
+
+
+
+
+/* end media width 1019 */ 
+}
 
 
